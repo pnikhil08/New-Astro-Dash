@@ -1,0 +1,147 @@
+.cardPanelPermi {
+    background: rgba(255, 255, 255, 0.54);
+
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), -8px -8px -8px 16px rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    padding: 10px 20px;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        /* width: min-content; */
+  }
+  .walletHead {
+    font-size: 1rem;
+    background-color: #2f1254;
+    border-radius: 10px;
+    color: #f5c518;
+    padding: .5rem 1rem ;
+    width:fit-content;
+  }
+  .astroMainSer {
+    padding: 1rem 1rem;
+    gap: 2rem;
+  }
+  .panelAccessCard {
+    padding: 1rem;
+    gap: 1rem !important;
+    background-color: #7E60BF;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.440);
+    border-left: .5px rgba(255, 255, 255, 0.545) outset;
+    border-radius: 8px;
+  }
+  .panelAccessCard:hover {
+    background: #855bb1 !important;
+}
+  .manTop {
+    width: 100vw !important;
+  }
+  .pAT {
+    gap: .5rem;
+  }
+  .pAType {
+    font-size: .9rem;
+    font-weight: 500;
+    color: black;
+  }
+  .topGreet {
+    font-size: .88rem;
+    color: #fff;
+  }
+  .onlineType {
+    padding: .2rem .6rem ;
+    /* padding-top: .5rem; */
+    padding: .35rem;
+    font-size: .7rem;
+    border-radius: 5px;
+    /* width: fit-content; */
+  }
+  .bg-success{
+    background-color: green;
+  }
+  .bg-danger{
+    background-color: red;
+  }
+  @media(max-width:1395px){
+    .astroMainSer{
+      justify-content: center;
+    }
+  }
+
+  @media(max-width:768px){
+    .cardPanelPermi{
+      /* padding: 0; */
+      margin: 0;
+      /* width: min-content; */
+    }
+    .astroMainSer{
+      justify-content: center;
+    }
+    /* .panelAccessCard{
+      width: 350px;
+      /* gap:0.5rem; 
+    }
+    .astroMainSer {
+      padding: .3rem .3rem;
+      gap: 1rem;
+    }
+    .pAType {
+      font-size: .5rem;
+      color: #cfb0f8;
+    }
+    .topGreet {
+      font-size: .5rem;
+      color: #fff;
+    } */
+  }
+  @media(max-width:520px){
+    .cardPanelPermi{
+      padding-top: 5px;
+      margin: 0;
+      /* width: 22rem; */
+      padding: 0;
+    }
+    .panelAccessCard{
+      width: 19rem;
+      /* gap:0.5rem; */
+    }
+    .astroMainSer {
+      padding: .3rem .3rem;
+      gap: 1rem;
+    }
+    .pAType {
+      font-size: .7rem;
+      color: #cfb0f8;
+    }
+    .topGreet {
+      font-size: .5rem;
+      color: #fff;
+    }
+  }
+  @media(max-width:376px){
+    .cardPanelPermi{
+      padding-top: 5px;
+      margin: 0;
+      /* width: 18.5rem; */
+    }
+    .panelAccessCard{
+      /* width: 260px; */
+      /* gap:0.5rem; */
+    }
+    .astroMainSer {
+      padding: .3rem .3rem;
+      gap: 1rem;
+    }
+    .pAType {
+      font-size: .7rem;
+      color: #cfb0f8;
+    }
+    .topGreet {
+      font-size: .7rem;
+      color: #fff;
+    }
+    .innerbutton{
+      width: 50px;
+    }
+  }

@@ -1,0 +1,121 @@
+.topMainDash{
+    /* padding-inline: 10px; */
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.topGreetH3 {
+    font-size: 1.1rem;
+    color: #2f1254;
+}
+.nameDy{
+    color: #7E60BF;
+    font-size: 1rem;
+    margin-left: .3rem;
+}
+.dashSpanInp {
+    border-radius: 20px;
+    padding: .5rem 1rem;
+    background: #00000025;
+    gap: .4rem;
+}
+.dashInp {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #000000;
+    font-size: .95rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #77777740;
+}
+@media(max-width:768px){
+    .topMainDash{
+        display: flex;
+        /* margin-inline-end: px; */
+        /* width: auto; */
+        /* margin-inline-end: 0; */
+        
+            /* width: 80vw; */
+            width:100%
+        
+    }
+  
+    .nameDy{
+        color: #7E60BF;
+        font-size: .85rem;
+        margin-left: .3rem;
+    }
+    .topGreetH3 {
+        font-size: .85rem;
+        color: #2f1254;
+    }
+}
+
+@media(max-width:426px){
+    .topMainDash{
+        display: flex;
+        /* margin-inline-end: 10px; */
+        /* width:23rem; */
+        justify-content: space-between;
+        
+        /* margin-inline-end: 0; */
+        /* padding: 0; */
+        
+    }
+    .dashSpanInp{
+        /* width: 5rem; */
+        height: 4.5vh;
+
+    }  .dashInp {
+        border: none;
+        outline: none;
+        background: transparent;
+        color: #000000;
+        font-size: .65rem;
+        letter-spacing: 1px;
+        border-bottom: 1px solid #77777740;
+    }
+    .topGreetH3 {
+        font-size: .75rem;
+        color: #2f1254;
+    }
+    .nameDy{
+        color: #7E60BF;
+        font-size: .75rem;
+        margin-left: .3rem;
+    }
+   
+}
+@media(max-width:321px){
+    .topMainDash{
+        display: flex;
+        /* margin-inline-end: 10px; */
+        /* width:20rem; */
+        /* margin-inline-end: 0; */
+        padding: 4px;
+        
+    }
+    .dashSpanInp{
+        /* width: 5rem; */
+        height: 4.5vh;
+
+    }  .dashInp {
+        border: none;
+        outline: none;
+        background: transparent;
+        color: #000000;
+        font-size: .65rem;
+        letter-spacing: 1px;
+        border-bottom: 1px solid #77777740;
+    }
+    .topGreetH3 {
+        font-size: .75rem;
+        color: #2f1254;
+    }
+    .nameDy{
+        color: #7E60BF;
+        font-size: .75rem;
+        margin-left: .3rem;
+    }
+   
+}
