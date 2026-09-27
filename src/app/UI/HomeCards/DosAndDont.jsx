@@ -1,24 +1,43 @@
 "use client";
+
 import { useGetdosAndDontApiQuery } from "@/app/redux/slice/doesDont";
 
 export default function DosAndDontsPage() {
-  const { data, isLoading, error } = useGetdosAndDontApiQuery();
+  const { data, isLoading, isError } = useGetdosAndDontApiQuery();
 
-  if (isLoading) return <p>Loading data...</p>;
-  if (error) return <p className="text-red-500">Failed to load data.</p>;
+  if (isLoading) return <p className="p-6 text-center">Loading data...</p>;
+
+  if (isError) {
+    return (
+      <p className="p-6 text-center text-red-500">
+        Failed to load data.
+      </p>
+    );
+  }
 
   return (
-    <div className="p-6 ">
-      <div className="text-2xl font-bold mb-4 justify-self-center wallet-head">Do's and Don'ts</div>
-      <div
-        className="mb-6 bg-gray-100 p-4 rounded-xl"
-        dangerouslySetInnerHTML={{ __html: data?.dos }}
-      />
-      <hr />
-      <div
-        className="mt-6 bg-gray-100 p-4 rounded-xl"
-        dangerouslySetInnerHTML={{ __html: data?.dont }}
-      />
-    </div>
+    <main className="p-6">
+      <h1 className="wallet-head mb-6 text-center text-2xl font-bold">
+        Do's and Don'ts
+      </h1>
+
+      <section className="space-y-6">
+        <article>
+          <h2 className="mb-3 text-lg font-semibold">Do's</h2>
+          <div
+            className="rounded-xl bg-gray-100 p-4"
+            dangerouslySetInnerHTML={{ __html: data?.dos ?? "" }}
+          />
+        </article>
+
+        <article>
+          <h2 className="mb-3 text-lg font-semibold">Don'ts</h2>
+          <div
+            className="rounded-xl bg-gray-100 p-4"
+            dangerouslySetInnerHTML={{ __html: data?.dont ?? "" }}
+          />
+        </article>
+      </section>
+    </main>
   );
 }
