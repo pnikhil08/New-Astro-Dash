@@ -1,14 +1,23 @@
 // context/SearchContext.js
 "use client";
-import { createContext, useContext, useState } from "react";
+
+import { createContext, useContext, useMemo, useState } from "react";
 
 const SearchContext = createContext();
 
 export const SearchProvider = ({ children }) => {
   const [searchQuery, setSearchQuery] = useState("");
 
+  const value = useMemo(
+    () => ({
+      searchQuery,
+      setSearchQuery,
+    }),
+    [searchQuery]
+  );
+
   return (
-    <SearchContext.Provider value={{ searchQuery, setSearchQuery }}>
+    <SearchContext.Provider value={value}>
       {children}
     </SearchContext.Provider>
   );
